@@ -1,8 +1,21 @@
 <!Doctype html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>
-      Пуста сторінка
+      Hello
     </title>
+    <script>
+       let name = prompt ('What is your name?');
+      let dialog = confirm (`Hello, ${name}\n Are you feeling good?`);
+      if (dialog){
+        alert(`Great, ${name}!\n Glad to hear this!`);
+      } else {
+        alert(`Ough!\n It\'s sad to hear that.\n Hopefully, it won\'t be for long.`);
+      }
+    </script>
   </head>
+  <body>
+    
+  </body>
 </html>
