@@ -39,15 +39,14 @@ function taskThree() {
 function taskFour() {
     console.log('\nДане ціле число. З\'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе).')
 
-    let num = 23;
+    let num = 5;
     for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
+        if (num % i == 0) {
             console.log(`${num} - Число не є простим`);
-            break;
+            return;
         }
-        console.log(`${num} - Число є простим`);
-        break;
     }
+    console.log(`${num} - Число є простим`);
 }
 
 function taskFive() {
