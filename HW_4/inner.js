@@ -1,42 +1,47 @@
-let age = prompt('Вввідіть свій рік народження');
+let answerAge = '';
+let answerCity = '';
+let answerSport = '';
+
+let age = Number(prompt('Вввідіть свій рік народження'));
 if (age) {
-    alert(`Ваш вік: ${2023 - age} років`);
+    answerAge = `Ваш вік: ${2023 - age} років`;
 } else {
     alert('Шкода, що Ви не захотіли ввести свій рік народженння.');
 }
 let city = prompt('В якому місті ви мешкаєте?');
-if (city != null) {
+if (city != null && city !== '') {
     switch (city.toUpperCase()) {
         case 'КИЇВ':
-            alert('Ти живеш у столиці України!');
+            answerCity = 'Ти живеш у столиці України!';
             break;
         case  'ВАШИНГТОН':
-            alert('Ти живеш у столиці Америки!');
+            answerCity = 'Ти живеш у столиці Америки!';
             break;
         case 'ЛОНДОН':
-            alert('Ти  живеш у столиці Великої Британії!');
+            answerCity = 'Ти  живеш у столиці Великої Британії!';
             break;
         default:
-            alert(`Ти живеш у місті ${city}`);
+            answerCity = '';
     }
 } else {
     alert('Шкода, що Ви не захотіли ввести своє місто народження!');
 }
 let sport = prompt('Ваш улюблений вид спорту?');
-if (sport != null) {
+if (sport != null && sport !== '') {
     switch (sport) {
         case  'бокс':
-            alert('Круто! Хочеш стати як Олександр Усик?');
+            answerSport = 'Круто! Хочеш стати як Олександр Усик?';
             break;
         case  'футбол':
-            alert('Круто! Хочеш стати як Дієго Марадона?');
+            answerSport = 'Круто! Хочеш стати як Дієго Марадона?';
             break;
         case 'теніс':
-            alert('Круто! Хочеш стати як Штефі Граф?');
+            answerSport = 'Круто! Хочеш стати як Штефі Граф?';
             break;
         default:
-            alert(`Твій улюблений спорт ${sport}`);
+            answerSport = '';
     }
 } else {
     alert('Шкода, що Ви не захотіли ввести свій улюблений вид спорту!');
 }
+alert(`${answerAge}  \n${answerCity} \n${answerSport}`);
