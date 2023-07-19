@@ -1,7 +1,6 @@
-let a = 0;
-let b = 0;
-let c = 0;
-let stop = false;
+let a;
+let b;
+let c;
 
 
 run();
@@ -63,8 +62,8 @@ function ifInvalid() {    /* функция для а=0  */
     alert('a = 0, функція не має рішень.');
 }
 
-function isValidNumber(number) {   /* определяем является ли введенное значение числом  */
-    return !isNaN(parseInt(number)) && isFinite(number);
+function isValidNumber(number) {
+    return !isNaN(number) && number !== '';
 }
 
 function stopMessage() {    /* функция на случай, если пользователь нажал cancel  */
