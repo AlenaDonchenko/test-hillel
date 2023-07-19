@@ -47,16 +47,13 @@ function squareRoot(a, b, c, ifInvalid) {    /* функция на нахожд
 }
 
 function showResult(result) {   /* выводим результат квадратного уравнения  */
-    if (result === null) {
-        alert("a = 0. Рівняння не має рішень.");
-    } else if (result.d < 0) {
-        alert("D < 0. Рівняння не має рішень.");
-    } else if (result.d === 0) {
-        alert(`D = 0. Єдиний корінь рівняння: ${result.x1}`);
-    } else {
-        alert(`D > 0. Корені рівняння: ${result.x1}, ${result.x2}`);
+    if (result.d < 0) {
+        alert(`D = ${result.d}: x1: ${result.x1}, x2: ${result.x2} `);
+    } if (result.d >= 0) {
+        alert(`D = ${result.d}, x1:  ${result.x1}, x2: ${result.x2}`);
     }
 }
+
 
 function ifInvalid() {    /* функция для а=0  */
     alert('a = 0, функція не має рішень.');
