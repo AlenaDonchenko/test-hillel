@@ -1,16 +1,14 @@
-let a = 0;
-let b = 0;
-let c = 0;
+let a;
+let b;
+let c;
 
 run();
 
 function run() {
 
-    while (true) {
+    while (a !== null && !isValidNumber(a)) {
         a = prompt('Будемо знаходити рішення квадратного рівняння виду:\n ax^2 + bx + c = 0.\n  Введіть a');
-        if (a != null && isValidNumber(a)) {
-            break;
-        }
+        console.log(a + ' - ' + isValidNumber(a));
         if (a == null) {
             stopMessage();
             return;
@@ -20,25 +18,17 @@ function run() {
         alert("a = 0. Рівняння не має рішень.");
         return;
     }
-    alert(`a = ${a}`)
 
-    while (true) {
-        b = prompt('Введіть b');
-        if (b != null && isValidNumber(b)) {
-            break;
-        }
+    while (b !== null && !isValidNumber(b)) {
+        b = prompt(`a = ${a}. Введіть b`);
         if (b == null) {
             stopMessage();
             return;
         }
     }
-    alert(`b = ${b}`)
 
-    while (true) {
-        c = prompt('Введіть c');
-        if (c != null && isValidNumber(c)) {
-            break;
-        }
+    while (c !== null && !isValidNumber(c)) {
+        c = prompt(`a = ${ a }, b = ${ b }. Введіть c`);
         if (c == null) {
             stopMessage();
             return;
@@ -63,7 +53,7 @@ function squareRoot() {
 }
 
 function isValidNumber(number) {
-    return !isNaN(parseInt(number)) && isFinite(number);
+    return !isNaN(number) && number !== '';
 }
 
 function stopMessage() {
