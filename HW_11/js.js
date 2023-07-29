@@ -1,14 +1,14 @@
-const array = [1, 2, 3, 4, 5, 6, 7];
+const array = ["a", 54, 12, 15, 4, "b"];
 
-function removeElement(array, number) {
-
+function removeElement(array, element) {
+const indexElem = array.indexOf(element)
     for (let i = 0; i < array.length; i++) {
-      if (array[i] === number){
-         array.splice(array[i]-1,1);
+      if (array[i] === element){
+         array.splice(indexElem,1);
       }
     }
     return array;
 }
 
-console.log(removeElement(array, 3));
+console.log(removeElement(array, 54));
 
