@@ -10,5 +10,5 @@ function removeElement(array, number) {
     return array;
 }
 
-console.log(removeElement(array, 3));
+console.log(removeElement(array, 5));
 
