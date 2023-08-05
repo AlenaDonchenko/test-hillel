@@ -25,13 +25,13 @@ const str = "The dates between 1976-03-12, and 1983-10-14, the code was 2004-67-
 
 
 function isCorrectDate(dateInfo) {
-    if (parseInt(dateInfo[2]) < 1 || parseInt(dateInfo[2]) > 31) {
+    if (+dateInfo[2] < 1 || +dateInfo[2] > 31) {
         return false;
     }
-    if (parseInt(dateInfo[1]) < 1 || parseInt(dateInfo[1]) > 12) {
+    if (+dateInfo[1] < 1 || +dateInfo[1] > 12) {
         return false;
     }
-    if (parseInt(dateInfo[0]) < 1) {
+    if (+dateInfo[0] < 1) {
         return false;
     }
     return true;
