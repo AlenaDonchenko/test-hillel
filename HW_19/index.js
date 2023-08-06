@@ -32,7 +32,7 @@
  }
 
  const Person1 = new Person('Alex', 25);
- const Person2 = new Person('Lina', 17);
+ const Person2 = new Person('Lina', 16);
  const Person3 = new Person('Den', 23);
 
  const car1 = new Car('Ford','Mondeo',2023, 'чорний');
