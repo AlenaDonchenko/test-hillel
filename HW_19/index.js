@@ -6,7 +6,7 @@
          }
  }
  function Car (brand, model, year, color, owner) {
-         this.name = brand;
+         this.brand = brand;
          this.model = model;
          this.year = year;
          this.color = color;
@@ -21,7 +21,7 @@
          };
 
      this.getInfoCar = function () {
-         console.log(`Марка: ${this.name}, модель: ${this.model}, рік випуску: ${this.year}, колір: ${this.color}`);
+         console.log(`Марка: ${this.brand}, модель: ${this.model}, рік випуску: ${this.year}, колір: ${this.color}`);
          if (this.owner) {
              console.log('Інформація про власника: ')
              this.owner.getInfoPerson()
