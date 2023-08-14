@@ -6,17 +6,17 @@ class Size {
 }
 class Stuffing {
     static SALAD =
-        {price: 20, calories: 5}
+        { price: 20, calories: 5 }
     static POTATO =
-        {price: 15, calories: 10}
+        { price: 15, calories: 10 }
     static CHEESE =
-        {price: 10, calories: 20}
+        { price: 10, calories: 20 }
 }
 class Topping {
     static MAYO =
-        {price: 20, calories: 5}
+        { price: 20, calories: 5 }
     static SAUCE =
-        {price: 15, calories: 0}
+        { price: 15, calories: 0 }
 }
 
 class Hamburger {
@@ -45,10 +45,10 @@ const hamburger = new Hamburger(Size.SMALL, Stuffing.CHEESE);
 
 hamburger.addTopping(Topping.MAYO);
 
-console.log("Calories: " + hamburger.calculateCalories());
-console.log("Price: " + hamburger.calculatePrice());
+console.log( "Calories: " + hamburger.calculateCalories() );
+console.log( "Price: " + hamburger.calculatePrice() );
 
-hamburger.addTopping(Topping.SAUCE)
+hamburger.addTopping( Topping.SAUCE )
 
-console.log("Price with sauce: " + hamburger.calculatePrice());
+console.log( "Price with sauce: " + hamburger.calculatePrice() );
 
