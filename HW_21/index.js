@@ -50,5 +50,5 @@ console.log( "Price: " + hamburger.calculatePrice() );
 
 hamburger.addTopping( Topping.SAUCE )
 
-console.log( "Price with sauce: " + hamburger.calculatePrice() );
+console.log("Price with sauce: " + hamburger.calculatePrice());
 
