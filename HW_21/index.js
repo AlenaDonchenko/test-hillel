@@ -1,17 +1,25 @@
+class Size {
+    static SMALL =
+        { price: 50, calories: 20 }
+    static BIG =
+        { price: 100, calories: 40 }
+}
+class Stuffing {
+    static SALAD =
+        {price: 20, calories: 5}
+    static POTATO =
+        {price: 15, calories: 10}
+    static CHEESE =
+        {price: 10, calories: 20}
+}
+class Topping {
+    static MAYO =
+        {price: 20, calories: 5}
+    static SAUCE =
+        {price: 15, calories: 0}
+}
+
 class Hamburger {
-   static SIZES = {
-        SMALL: {price: 50, calories: 20},
-        BIG: {price: 100, calories: 40}
-    }
-    static STUFFING = {
-        SALAD: {price: 20, calories: 5},
-        POTATO: {price: 15, calories: 10},
-        CHEESE: {price: 10, calories: 20}
-    }
-    static TOPPING = {
-        MAYO: {price: 20, calories: 5},
-        SAUCE: {price: 15, calories: 0}
-    }
     constructor(size, stuffing) {
         this.toppings = [];
         this.size = size;
@@ -22,10 +30,10 @@ class Hamburger {
         this.toppings.push(topping);
     }
 
-     calculateCalories() {
-         const total = this.size.calories + this.stuffing.calories;
-         return this.toppings.reduce((accumulator, topping) => accumulator + topping.calories, total);
-     }
+    calculateCalories() {
+        const total = this.size.calories + this.stuffing.calories;
+        return this.toppings.reduce((accumulator, topping) => accumulator + topping.calories, total);
+    }
 
     calculatePrice() {
         const totalPrice = this.size.price + this.stuffing.price;
@@ -33,14 +41,14 @@ class Hamburger {
     }
 }
 
-const hamburger = new Hamburger(Hamburger.SIZES.SMALL, Hamburger.STUFFING.CHEESE);
+const hamburger = new Hamburger(Size.SMALL, Stuffing.CHEESE);
 
-hamburger.addTopping(Hamburger.TOPPING.MAYO);
+hamburger.addTopping(Topping.MAYO);
 
 console.log("Calories: " + hamburger.calculateCalories());
 console.log("Price: " + hamburger.calculatePrice());
 
-hamburger.addTopping(Hamburger.TOPPING.SAUCE)
+hamburger.addTopping(Topping.SAUCE)
 
 console.log("Price with sauce: " + hamburger.calculatePrice());
 
