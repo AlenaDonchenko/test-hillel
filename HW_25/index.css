@@ -1,0 +1,43 @@
+#photo {
+    width: 1000px;
+    height: 700px;
+}
+.slider-container {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+}
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 50px;
+    font-size: 24px;
+    color: darkred;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 20px;
+}
+.prev-button:hover {
+    background-color: saddlebrown;
+    color: antiquewhite;
+}
+.next-button {
+    right: 20px;
+}
+.next-button:hover {
+    background-color: saddlebrown;
+    color: antiquewhite;
+}
