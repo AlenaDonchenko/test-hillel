@@ -1,0 +1,16 @@
+#text-input {
+    border: 2px solid midnightblue;
+    height: 27px;
+}
+
+
+#some-text {
+    display: none;
+    position: absolute;
+    left: 192px;
+    top: 8px;
+    background-color: yellowgreen;
+    padding: 5px;
+    border: 2px solid darkblue;
+
+}
