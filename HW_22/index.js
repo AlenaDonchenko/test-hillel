@@ -4,7 +4,8 @@ class Student {
         this.lastName = lastName;
         this.year = year;
         this.grades = [];
-        this.visitLog = []
+        this.visitLog = new Array(25);
+        this.countRealLessons = 0;
     }
 
     getAge() {
@@ -18,25 +19,26 @@ class Student {
         return sumRating / this.grades.length;
     }
 
-    present() {
-        if (this.visitLog.length < 25) {
-            return this.visitLog.push(true);
+    addVisit(isVisit) {
+        if (this.countRealLessons < 25) {
+            this.countRealLessons++;
+            return this.visitLog.push(isVisit);
         } else {
             console.log("Не може бути більше 25 записів.")
         }
     }
 
-    calculatePresent() {
-        let countTrue = this.visitLog.filter(value => value === true).length;
-        return countTrue / this.visitLog.length;
+    present() {
+        this.addVisit(true);
     }
 
     absent() {
-        if (this.visitLog.length < 25) {
-        return this.visitLog.push(false);
-        } else {
-            console.log("Не може бути більше 25 записів")
-        }
+        this.addVisit(false);
+    }
+
+    calculatePresent() {
+        let countTrue = this.visitLog.filter(value => value === true).length;
+        return countTrue / this.countRealLessons;
     }
 
     summary() {
