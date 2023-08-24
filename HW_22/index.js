@@ -38,7 +38,7 @@ class Student {
 
     calculatePresent() {
         let countTrue = this.visitLog.filter(value => value === true).length;
-        return countTrue / this.countRealLessons;
+        return countTrue / 25;
     }
 
     summary() {
@@ -54,35 +54,45 @@ class Student {
     }
 }
 
+
+
 const student1 = new Student("Іван", "Петренко", 2000);
+student1.getAge();
+
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.present();
+student1.grades = [95, 92, 97, 98, 98, 90];
+
+student1.summary();
+
+
 const student2 = new Student("Марія", "Соколова", 2001);
+student2.getAge();
+
+student2.present();
+student2.present();
+student2.present();
+student2.grades = [93, 91, 92, 94];
+
+student2.summary();
+
+
+
 const student3 = new Student("Денис", "Романов", 1999);
-
-student1.present();
-student1.present();
-student1.present();
-student1.absent();
-student1.absent();
-student1.absent();
-
-student2.present();
-student2.present();
-student2.present();
+student3.getAge();
 
 student3.absent();
 student3.absent();
 student3.absent();
 student3.present();
-
-student1.grades = [95, 92, 97, 98, 98, 90];
-student2.grades = [93, 91, 92, 94];
 student3.grades = [73, 81, 82, 74];
 
-student1.getAge();
-student1.summary();
-
-student2.getAge();
-student2.summary();
-
-student3.getAge();
 student3.summary();
