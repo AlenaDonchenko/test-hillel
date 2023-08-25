@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    font: 20px/24px Tahoma, sans-serif;
+}
+#digit-table {
+    margin: 0 auto;
+    border: 4px solid indigo;
+    border-collapse: collapse;
+}
+td,
+tr{
+    border: 3px solid indigo;
+}
+td {
+    padding: 20px;
+    text-align: center;
+}
