@@ -8,46 +8,55 @@ class emoticon {
     get emojiId() {
         return this._emojiId;
     }
-
     get emoji() {
         return this._emoji;
     }
-
     get count() {
         return this._count;
     }
 }
 
 let id = 1;
+let emojiList = [
+    new emoticon(id++, '🤗', 0),
+    new emoticon(id++, '😁', 0),
+    new emoticon(id++, '🤪', 0),
+    new emoticon(id++, '😉', 0),
+    new emoticon(id++, '🤩', 0)
+]
 
-let emojiList = [new emoticon(++id, '🤗', 0),
-    new emoticon(++id, '😁', 0),
-    new emoticon(++id, '🤪', 0),
-    new emoticon(++id, '😉', 0),
-    new emoticon(++id, '🤩', 0)]
-
-
-// Создаем функцию для отображения смайликов на странице
 function showEmojis() {
-    // Получаем элемент, куда будем добавлять смайлики
     const emojiContainer = document.getElementById("emoji-container");
 
-    // Перебираем массив смайликов и для каждого создаем элемент и добавляем на страницу
     emojiList.forEach((emoticon) => {
         const emojiDiv = document.createElement("div");
-        emojiDiv.textContent = emoticon.emoji; // Устанавливаем смайлик в текст элемента
-        emojiDiv.classList.add("emoji"); // Добавляем CSS класс для стилизации
-        emojiContainer.appendChild(emojiDiv); // Добавляем элемент на страницу
-
-        const countDiv = document.createElement("div")
-        countDiv.textContent = emoticon.count; // Устанавливаем счетчик в текст элемента
-        countDiv.classList.add("count"); // Добавляем css класс
-        emojiContainer.appendChild(countDiv);
-
+        emojiDiv.onclick = () => {
+            addVoice(emoticon.emojiId);
+        };
+        emojiDiv.id = `${emoticon.emojiId}`;
+        emojiDiv.textContent = emoticon.emoji + ' (' + emoticon.count + ')';
+        emojiDiv.classList.add("emoji");
+        emojiContainer.appendChild(emojiDiv);
     });
 }
-// Вызываем функцию для отображения смайликов
 showEmojis();
+
+function addVoice(id) {
+    const emoticon = emojiList.find(emoticon => emoticon.emojiId === id)
+    if (emoticon) {
+        emoticon._count += 1;
+        updateEmojiDisplay(emoticon);
+    }
+}
+
+function updateEmojiDisplay(emoticon) {
+    const emojiDiv = document.getElementById( emoticon.emojiId);
+    if (emojiDiv) {
+        emojiDiv.textContent = emoticon.emoji + ' (' + emoticon.count + ')';
+    }
+}
+
+
 
 
 
