@@ -1,20 +1,36 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #d7f7e2;
+    user-select: none;
+}
+main {
+    margin: 0 auto;
+    width: 700px;
+    padding: 30px;
+
+}
+h1 {
+    font: 46px/50px "Trebuchet MS", sans-serif;
+    text-align: center;
+    color: brown;
+    font-style: oblique;
+    margin: 20px 0 45px;
+}
 
 #emoji-container {
     display: flex;
     justify-content: center;
-    width: 700px;
-    height: 500px;
-    background-color: antiquewhite;
     align-items: center;
-    margin: 0 auto;
 }
 .emoji {
     display: flex;
+    text-align: center;
     font-size: 40px;
     margin: 20px;
+    cursor: pointer;
+
 }
 .count {
     display: flex;
