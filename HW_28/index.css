@@ -1,9 +1,12 @@
 body {
     background-color: lightblue;
-}
-.categories {
     font: 30px/34px Georgia serif;
     font-weight: bold;
+}
+#card {
+    display: inline-flex;
+}
+.categories {
     color: brown;
     padding: 15px;
     width: 300px;
@@ -17,7 +20,30 @@ body {
     padding: 10px;
 }
 .category-list:hover {
-    background-color: lightgreen;
+    background-color: lavender;
     border: 2px solid darkgreen;
+    color: maroon;
+
+}
+.product {
+    color: darkgreen;
+    padding: 15px;
+    width: 300px;
+}
+.product-list {
+    margin: 20px;
+    background-color: khaki;
+    border: 2px solid darkslategrey;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+.product-list:hover {
+    background-color: lavender;
+    border: 2px solid darkgreen;
+    color: maroon;
+
+}
+.product-info {
 
 }
