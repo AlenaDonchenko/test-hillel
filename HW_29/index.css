@@ -1,0 +1,66 @@
+.hidden{
+    display: none;
+}
+#registrationForm {
+    width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid mediumorchid;
+    background-color: mistyrose;
+    border-radius: 15px;
+}
+.label{
+    font-size: 22px;
+    color: indigo;
+}
+.text-input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid darkmagenta;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 500px;
+}
+.radio-label {
+    font-size: 22px;
+    color: darkmagenta;
+}
+.row-radio {
+    margin-bottom: 10px;
+}
+
+.box-city{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.select-city,
+.address {
+    padding: 10px;
+    border: 2px solid darkmagenta;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.select-city {
+    width: 320px;
+}
+.address {
+    width: 300px;
+}
+
+.choose-box {
+    margin-bottom: 20px;
+}
+.btn-submit {
+    padding: 10px 20px;
+    border: 2px solid darkmagenta;
+    border-radius: 10px;
+}
+.btn-submit:hover {
+    background-color: palevioletred;
+}
