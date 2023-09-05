@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="registrationForm">
+<div class="row">
+  <label for="name" class="label">Your firstname</label>
+  <input class="text-input" type="text" id="name">
+</div>
+<div class="row">
+  <label for="lastname" class="label">Your lastname</label>
+  <input class="text-input" type="text" id="lastname">
+</div>
+<div class="row">
+  <label for="birthday" class="label">Your birthday</label>
+  <input class="text-input" type="text" id="birthday">
+</div>
+
+<div class="row-radio">
+  <input type="radio" name="gender" id="male" class="radio-box">
+  <label for="male" class="radio-label">male</label>
+</div>
+
+<div class="row-radio">
+  <input type="radio" name="gender" id="female" class="radio-box">
+  <label for="female" class="radio-label">female</label>
+</div>
+
+<div class="box-city">
+  <label class="label" for="city">Choose your city</label>
+  <select class="select-city" id="city">
+    <option value="">-----------</option>
+  <option value="Mariupol">Mariupol</option>
+  <option value="Kharkiv">Kharkiv </option>
+  <option value="Odessa">Odessa</option>
+  <option value="Dnypro">Dnypro</option>
+  <option value="Kyiv">Kyiv</option>
+  </select>
+</div>
+
+<div class="row">
+  <label class="label" for="address">Address</label>
+  <textarea class="address" name="address" id="address"></textarea>
+</div>
+
+<fieldset class="choose-box">
+  <legend class="label">What languages do you speak?</legend>
+  <input type="checkbox" name="" id="english" class="check-box">
+  <label for="english" class="label">English</label>
+  <input type="checkbox" name="" id="ukraine" class="check-box">
+  <label for="ukraine" class="label">Ukraine</label>
+  <input type="checkbox" name="" id="german" class="check-box">
+  <label for="german" class="label">German</label>
+  <input type="checkbox" name="" id="french" class="check-box">
+  <label for="french" class="label">French</label>
+</fieldset>
+
+
+  <input class="btn-submit" type="submit" value="Save" onclick="showInfo()">
+
+</form>
+
+<div id="textOutput" class="hidden">
+  <h2>Ввведені данні:</h2>
+  <pre></pre>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
