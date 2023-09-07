@@ -16,6 +16,5 @@ function showInfo() {
     }
     dataTable.classList.remove("hidden");
     form.classList.add("hidden");
-
 }
 
