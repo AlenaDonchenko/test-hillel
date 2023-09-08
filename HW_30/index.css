@@ -1,0 +1,108 @@
+body {
+    background-color: lightblue;
+    font: 30px/34px Georgia serif;
+    font-weight: bold;
+}
+#card {
+    display: flex;
+    justify-content: center;
+}
+.categories {
+    color: brown;
+    padding: 15px;
+    width: 300px;
+    border-radius: 15px;
+}
+.category-list {
+    margin: 20px;
+    border: 2px solid darkslategrey;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lavender;
+}
+.category-list:hover {
+    background-color: #bae8e0;
+    color: maroon;
+
+}
+
+.product {
+    color: darkgreen;
+    padding: 15px;
+    width: 300px;
+    border-radius: 15px;
+}
+.product-list {
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lavender;
+    border: 2px solid darkgreen;
+}
+.product-list:hover {
+    background-color: #bae8e0;
+    border: 2px solid darkgreen;
+    color: maroon;
+
+}
+.info-block {
+    padding: 15px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.product-info {
+    margin: 20px;
+    border: 2px solid darkslategrey;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lavender;
+    color: firebrick;
+}
+.btn {
+    margin: 20px;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    border: 2px solid darkslategrey;
+    background-color: cadetblue;
+}
+.radio-label {
+    font-size: 20px;
+    color: darkslateblue;
+}
+.label {
+    font-size: 24px;
+    color: #452263;
+    display: block;
+}
+.post-office,
+.text-input,
+.select-city,
+textarea {
+    padding: 5px;
+    background-color: lavender;
+    width: 300px;
+}
+
+#amount {
+    background-color: lavender;
+    padding: 5px;
+    width: 300px;
+}
+.row,
+.box-city,
+.box-post{
+    margin-bottom: 15px;
+}
+#comment,
+#name{
+    width: 100%;
+}
