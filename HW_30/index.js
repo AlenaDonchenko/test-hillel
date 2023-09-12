@@ -117,12 +117,16 @@ function showInfoByProductId(productId) {
     buttonBye.textContent = 'Купити';
     buttonBye.classList.add("btn");
     prodInfo.appendChild(buttonBye);
-    buttonBye.onclick = () => {
-        alert("Товар куплений!");
-        refreshPage()
-    }
+     buttonBye.onclick = () => {
+          // alert("Товар куплений!");
+          // refreshPage()
+window.open('http://localhost:63342/test-hillel/HW_30/inner.html?');
+
+     }
 }
 
-function refreshPage() {
-    location.reload();
-}
+// function refreshPage() {
+//     location.reload();
+// }
+
+

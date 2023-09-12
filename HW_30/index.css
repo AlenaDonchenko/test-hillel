@@ -1,11 +1,10 @@
 body {
-    background-color: lightblue;
-    font: 30px/34px Georgia serif;
-    font-weight: bold;
+    font: 20px/24px Tahoma, sans-serif;
 }
 #card {
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 .categories {
     color: brown;
@@ -79,30 +78,52 @@ body {
     color: darkslateblue;
 }
 .label {
-    font-size: 24px;
+    font-size: 18px;
     color: #452263;
     display: block;
 }
 .post-office,
 .text-input,
 .select-city,
-textarea {
+.novaPoshta,
+#payment,
+#quantity,
+#amount,
+#comment,
+#confirmOrder {
     padding: 5px;
     background-color: lavender;
     width: 300px;
+    border-radius: 5px;
+}
+#quantity {
+    width: 100px;
 }
 
-#amount {
-    background-color: lavender;
-    padding: 5px;
-    width: 300px;
-}
 .row,
-.box-city,
-.box-post{
+.box-city{
     margin-bottom: 15px;
 }
-#comment,
+
 #name{
     width: 100%;
+}
+h2 {
+    font-size: 24px;
+    color: darkmagenta;
+    margin: 10px 0;
+    text-align: center;
+}
+#confirmOrder {
+    cursor: pointer;
+}
+#confirmOrder:hover {
+    background-color: darkgray;
+}
+.order-form {
+    border: 2px solid darkmagenta;
+    border-radius: 15px;
+}
+.form {
+    padding: 15px;
 }
