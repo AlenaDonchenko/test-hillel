@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Title</title>
 </head>
 <body>
 <main id="card">
-
     <div class="order-form">
         <h2>Обробка заказа</h2>
 
@@ -68,17 +67,23 @@
             </div>
 
             <div class="row">
-                <button type="button" onclick="createOrder()" id="confirmOrder">Підтвердити заказ</button>
+                <button type="button" onclick="createNewOrder()" id="confirmOrder">Підтвердити заказ</button>
             </div>
 
         </form>
+
+        <a href="index.html" class="main-link" id="to-main-menu-button" style="display: none">Головна сторінка</a>
+
     </div>
 </main>
-<script src="inner.js"></script>
 <script>
     const params = new URLSearchParams(window.location.search);
     const productId = params.get('productId');
 
 </script>
+<script src="js/index.js"></script>
+<script src="js/entity.js"></script>
+<script src="js/service.js"></script>
+<script src="js/make-order-form.js"></script>
 </body>
 </html>

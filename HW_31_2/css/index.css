@@ -2,12 +2,7 @@ body {
     font: 20px/24px Tahoma, sans-serif;
 }
 #card {
-    width: 800px;
-    margin: 0 auto;
-}
-.wrapper {
     display: flex;
-    justify-content: center;
     font-weight: bold;
 }
 .categories {
@@ -27,6 +22,7 @@ body {
 .category-list:hover {
     background-color: #bae8e0;
     color: maroon;
+
 }
 
 .product {
@@ -77,11 +73,10 @@ body {
     background-color: cadetblue;
 }
 .my-order {
-    margin: 0 30px;
-    background-color: darkgrey;
-    padding: 20px 40px;
-    font: 20px/24px Tahoma, sans-serif;
-
+    padding: 20px;
+}
+.button-order {
+    padding: 15px;
 }
 .radio-label {
     font-size: 20px;
@@ -136,4 +131,7 @@ h2 {
 }
 .form {
     padding: 15px;
+}
+.order {
+    margin: 10px;
 }
