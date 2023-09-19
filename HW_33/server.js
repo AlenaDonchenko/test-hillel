@@ -1,7 +1,7 @@
 
-let http = require("node:http");
-let fs = require("node:fs");
-let path = require("node:path");
+const http = require("node:http");
+const fs = require("node:fs");
+const path = require("node:path");
 
 http
     .createServer(function (request, response) {
@@ -12,8 +12,8 @@ http
             filePath = "./index.html";
         }
 
-        let extname = String(path.extname(filePath)).toLowerCase();
-        let mimeTypes = {
+        const extname = String(path.extname(filePath)).toLowerCase();
+        const mimeTypes = {
             ".html": "text/html",
             ".js": "text/javascript",
             ".css": "text/css",
