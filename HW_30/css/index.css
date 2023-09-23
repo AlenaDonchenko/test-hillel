@@ -3,7 +3,6 @@ body {
 }
 #card {
     display: flex;
-    justify-content: center;
     font-weight: bold;
 }
 .categories {
@@ -11,6 +10,7 @@ body {
     padding: 15px;
     width: 300px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .category-list {
     margin: 20px;
@@ -31,6 +31,7 @@ body {
     padding: 15px;
     width: 300px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .product-list {
     margin: 20px;
@@ -62,14 +63,19 @@ body {
     background-color: lavender;
     color: firebrick;
 }
-.btn {
+.product-name-div {
+    color: darkred;
+    margin: 15px 0;
+    text-align: center;
+}
+.button-bye {
     margin: 20px;
     background-color: lightsteelblue;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
 }
-.btn:hover {
+.button-bye:hover {
     border: 2px solid darkslategrey;
     background-color: cadetblue;
 }
@@ -124,6 +130,10 @@ h2 {
     border: 2px solid darkmagenta;
     border-radius: 15px;
 }
+.hidden {
+    display: none;
+}
 .form {
     padding: 15px;
 }
+
