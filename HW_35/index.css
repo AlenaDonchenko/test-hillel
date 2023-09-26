@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+
+}
+.wrapper {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+.table-row {
+    border: 2px solid #1d6794;
+    border-radius: 20px;
+    background-color: #edf0f5;
+}
+li {
+    list-style: none;
+}
+.city-name {
+    font-size: 30px;
+    margin: 20px 0 30px;
+}
+.degrees {
+    color: darkred;
+    font-weight: bold;
+    font-size: 34px;
+
+}
+.disclaimer,
+.pressure,
+.degrees,
+.humidity,
+.direction,
+.wind {
+    margin: 0 0 30px;
+}
