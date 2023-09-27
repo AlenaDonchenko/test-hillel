@@ -1,6 +1,11 @@
 fetch('http://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=7a3e02c1cb2577465a2eae7a36cde87d')
 .then(function (resp) {
-    return resp.json() })
+    if (resp.ok) {
+        return resp.json();
+    } else {
+        throw {status: resp.status, statusText: resp.statusText}
+    }
+    })
     .then(function (data) {
         document.querySelector('.city-name').textContent = data.name;
         document.querySelector('.degrees').innerHTML = Math.round(data.main.temp) + '&deg';
@@ -12,4 +17,7 @@ fetch('http://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=
         document.querySelector('.icon li').innerHTML = '<img src = "http://openweathermap.org/img/w/10d.png">'
 
     })
+        .catch(function (error) {
+        console.error("There's error on request: ", error)
+});
 
