@@ -26,7 +26,7 @@ search.addEventListener('click', () => {
 
             const comments = document.getElementById('comments');
             comments.addEventListener('click', () => {
-                // Виконання запиту до API для отримання коментарів
+
                 fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
                     .then(response => {
                         if (!response.ok) {
