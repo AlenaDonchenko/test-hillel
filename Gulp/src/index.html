@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Online store</title>
+</head>
+<body>
+<main id="card">
+
+  <div class="categories" id="data-category"></div>
+  <div class="product"></div>
+  <div class="info-block"></div>
+
+
+  <div id="orderForm" class="hidden" >
+    <h2>Обробка заказа</h2>
+
+    <form action="" id="formCreateOrder" class="form" method="post" onsubmit = "return createOrder()">
+      <div class="row">
+        <label for="customerName" class="label">ПІБ покупця</label>
+        <input class="text-input" type="text" id="customerName" name="customerName" required pattern="^[А-ЯҐЄІЇ][а-яґєії' -]*$"
+>
+      </div>
+
+      <div class="row">
+        <label class="label" for="deliveryCity">Оберіть місто доставки</label>
+        <select class="select-city" id="deliveryCity" name="deliveryCity" required>
+
+          <option value="Маріуполь">Маріуполь</option>
+          <option value="Київ">Київ</option>
+          <option value="Одесса">Одесса</option>
+          <option value="Львів">Львів</option>
+          <option value="Харків">Харків</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label class="label" for="novaPoshta">Відділення Нової пошти</label>
+        <select class="novaPoshta" id="novaPoshta" name="novaPoshta">
+
+          <option value="Відділення 1">Відділення 1</option>
+          <option value="Відділення 2">Відділення 2</option>
+          <option value="Відділення 3">Відділення 3</option>
+          <option value="Відділення 4">Відділення 4</option>
+          <option value="Відділення 5">Відділення 5</option>
+          <option value="Відділення 6">Відділення 6</option>
+          <option value="Відділення 7">Відділення 7</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label class="label" for="payment">Форма оплати</label>
+        <select id="payment" name="payment">
+          <option value="cash">Післяоплата</option>
+          <option value="bankcard">Оплата банківською картою</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label class="label" for="quantity">Кількість штук</label>
+        <input type="number" min="1" id="quantity" value="1" name="quantity">
+      </div>
+
+      <div class="row">
+        <label class="label" for="comment">Коментар до замовлення</label>
+        <textarea name="comment" id="comment"></textarea>
+      </div>
+
+      <div class="row">
+        <button type="submit" id="confirmOrder">Підтвердити заказ</button>
+      </div>
+
+    </form>
+  </div>
+
+
+</main>
+
+<script src="./scripts/entity.js"></script>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/form-create-order.js"></script>
+<script src="./scripts/service.js"></script>
+</body>
+</html>

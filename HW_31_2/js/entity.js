@@ -14,11 +14,12 @@ class Category {
 }
 
 class Product {
-    constructor(productName, productId, categoryId, price) {
+    constructor(productName, productId, categoryId, price, image) {
         this._productId = productId;
         this._productName = productName;
         this._categoryId = categoryId;
         this._price = price;
+        this.image = image;
     }
 
     get productName() {
@@ -33,6 +34,10 @@ class Product {
 
     get price() {
         return this._price;
+    }
+
+    get image() {
+        return this.image;
     }
 }
 class Order {

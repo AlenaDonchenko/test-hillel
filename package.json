@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "del": "^7.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-strip-debug": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.2"
+  }
+}
