@@ -1,0 +1,24 @@
+.main-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #bae8e0;
+}
+h1 {
+    text-align: center;
+
+}
+.form {
+    margin: 20px;
+}
+.input-form {
+padding: 10px;
+}
+input {
+    width: 100%;
+    padding: 5px;
+}
+button {
+    margin: 10px;
+    padding: 5px;
+}
