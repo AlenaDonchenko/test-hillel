@@ -1,0 +1,14 @@
+.App {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+    color: darkred;
+}
+.completed {
+    color: darkgreen;
+}
